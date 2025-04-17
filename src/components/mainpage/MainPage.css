@@ -1,0 +1,46 @@
+.main-layout {
+  display: flex;
+  width: 100%;
+  /* height: 100vh; */
+  overflow: hidden;
+  padding-top: 70px; /* Push below navbar */
+}
+body {
+  font-family: "Winky Rough", sans-serif; 
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 400; /* Optional: set a default font weight */
+  line-height: 1.5;
+}
+
+/* LEFT SIDE - Content Area */
+.left-section {
+  width: 80%;
+  overflow-y: auto;
+  height: calc(100vh - 70px); /* Adjust height below navbar */
+}
+
+/* RIGHT SIDE - Fixed Quote Form */
+.right-section {
+  width: 20%;
+  position: fixed;
+  right: 0;
+  top:50px; /* Push below navbar */
+  height: calc(100vh - 70px); /* Match height below navbar */
+  background: #f8f8f8;
+  padding: 20px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 998;
+}
+
+
+/* Responsive: hide quote form on small screens */
+@media (max-width: 900px) {
+  .right-section {
+    display: none;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.site-floor-plan-section {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  /* margin-top: -50px; */
+  top: 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ff4d4d;
+}
+
+.subsection-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 30px 10px 20px;
+  color: #333;
+}
+
+/* Master Plan - Centered */
+.master-plan-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Floor Plans - Grid of 3 */
+.floor-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floor-plan-grid {
+    grid-template-columns: 1fr;
+  }
+}

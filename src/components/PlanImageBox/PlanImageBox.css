@@ -1,0 +1,71 @@
+.plan-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px;
+  }
+  
+  .plan-image-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Container for image only */
+  .plan-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.4s ease;
+  }
+  
+  /* Apply blur only on image when hovered */
+  .plan-image-wrapper:hover .plan-img {
+    filter: blur(3px);
+  }
+  
+  /* Hover overlay stays clean, shows content */
+  .plan-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Enquiry text slides in */
+  .enquiry-now {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    pointer-events: auto;
+  }
+  
+  .plan-image-wrapper:hover .enquiry-now {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .plan-label {
+    margin-top: 1px;
+    padding: 8px 0;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, #ff9999, #ff4d4d);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+  }
+  

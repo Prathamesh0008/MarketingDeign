@@ -1,0 +1,172 @@
+.quote-form-sidebar {
+  width: 20%;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  height: calc(100vh - 70px);
+  background-color: #f9f9f9;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: 500;
+  overflow-y: auto;
+  border-left: 1px solid #eee;
+}
+
+.quote-form-container {
+  background: white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.quote-form-header {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#quote-form-phone-number:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.quote-form-divider {
+  margin: 0 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.quote-form-phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quote-form-phone-icon {
+  animation: pulse 1.2s infinite;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.quote-form-instant-callback {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  gap: 8px;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff4d4d;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-form-instant-callback .quote-form-callback-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.quote-form-container h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.quote-form-input-group {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+  gap: 8px;
+}
+
+.quote-form-input-group .quote-form-input-icon {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+}
+
+.quote-form-input-group input,
+.quote-form-input-group select {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 13px;
+}
+
+.phone-row select {
+  max-width: 80px;
+}
+
+.quote-form-submit-btn {
+  width: 100%;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quote-form-submit-btn:hover {
+  background-color: #e63c3c;
+}
+
+.success-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .quote-form-sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-left: none;
+    margin-top: 20px;
+  }
+
+  .quote-form-instant-callback {
+    width: 100%;
+  }
+}
+
+

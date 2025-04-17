@@ -1,0 +1,146 @@
+.real-estate-footer {
+    background: #dfd9d9; /* Dark background for better contrast */
+    color: #121212;
+    padding: 3rem 2rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-links a:hover,
+  .footer-socials a:hover {
+    color: #ff4d4d; /* Red color for hover to match your main site color */
+  }
+  
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo-section {
+    text-align: left;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a {
+    color: #121212;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-contact p {
+    margin: 0.3rem 0;
+  }
+  
+  .footer-socials .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-socials a {
+    color: #121212;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    transform: scale(1.2);
+    color: #ff4d4d;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-disclaimer {
+    margin-top: 0.5rem;
+    color: #969494;
+    max-width: 800px;
+    margin-inline: auto;
+  }
+  @media (max-width: 768px) {
+    .real-estate-footer {
+      padding: 2rem 1.5rem;
+    }
+  
+    .footer-logo {
+      width: 180px;
+    }
+  
+    .footer-top {
+      gap: 1.5rem;
+    }
+  
+    .footer-socials .social-icons {
+      justify-content: flex-start;
+    }
+  
+    .footer-links h4,
+    .footer-contact h4,
+    .footer-socials h4 {
+      font-size: 1rem;
+    }
+  
+    .footer-links a,
+    .footer-contact p,
+    .footer-disclaimer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .real-estate-footer {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .footer-logo-section,
+    .footer-links,
+    .footer-contact,
+    .footer-socials {
+      text-align: center;
+    }
+  
+    .footer-socials .social-icons {
+      justify-content: center;
+    }
+  
+    .footer-logo {
+      width: 140px;
+    }
+  
+    .footer-bottom {
+      font-size: 0.85rem;
+    }
+  
+    .footer-disclaimer {
+      font-size: 0.8rem;
+    }
+  }
+  
